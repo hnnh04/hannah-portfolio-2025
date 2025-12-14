@@ -1,0 +1,195 @@
+[
+  {
+  "id": "film-ombu-imagevideo",
+  "title": "OMBU Imagevideo",
+  "subtitle": "Film · Storytelling · Auftrag",
+  "type": "film",
+  "year": 2025,
+  "createdAt": "2025-11-20",
+  "tags": ["Film", "Imagevideo", "Auftrag", "Schnitt"],
+  "coverImage": "assets/img/film/film-ombu-spot.png",
+  "images": ["assets/video/ombu_video.mp4"],
+  "shortDescription": "Imagevideo für den OMBU BIKE WOMAN / MAN, das die Abenteuer und Naturverbundenheit der Tour einfängt.",
+  "longDescription": "Für den OMBU BIKE WOMAN / MAN des Multisport LOS durfte ich ein Imagevideo produzieren. Ziel war es, die Abenteuer und Naturverbundenheit der Tour einzufangen. Mit schönen Kamerabewegungen, schnellem Sounddesign und warmem Color Grading entstand ein Video, das den Spaß und Atmosphäre der Tour transportiert.",
+  "role": "Konzept, Kamera, Schnitt, Color Grading",
+  "tools": "DaVinci Resolve, Sony 6400",
+  "category": ["film", "auftrag"]
+},
+
+{
+  "id": "foto-hochzeit-tante",
+  "title": "Hochzeitsfotografie",
+  "subtitle": "Fotografie · Event · Privat",
+  "type": "foto",
+  "year": 2023,
+  "createdAt": "2023-06-18",
+  "tags": ["Fotografie", "Reportage", "Privat"],
+  "coverImage": "assets/img/fotografie/photo-tante-hochzeit.png",
+  "images": [
+    "assets/img/fotografie/photo-tante-hochzeit01.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit02.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit03.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit04.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit05.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit06.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit09.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit10.jpg",
+    "assets/img/fotografie/photo-tante-hochzeit11.jpg"
+  ],
+  "shortDescription": "Meine erste Hochzeitsfotografie – fotografiert als Gast und Fotografin. Natürliche Emotionen, Details und stille Momente.",
+  "longDescription": "Als Gast auf der Hochzeit meiner Tante hatte ich die Gelegenheit, als Fotografin natürliche und authentische Momente einzufangen. Mein Fokus lag auf emotionalen Augenblicken, Details und der Atmosphäre des Tages. Es war eine bereichernde Erfahrung, die mir viel Freude bereitet hat.",
+  "role": "Fotografin, Bildbearbeitung",
+  "tools": "Canon, Lightroom, Affinity Photo",
+  "category": ["foto", "privat"]
+}, 
+
+{
+  "id": "foto-opa-serie",
+  "title": "Portraitserie",
+  "subtitle": "Fotografie · Dokumentation · Universität",
+  "type": "foto",
+  "year": 2024,
+  "createdAt": "2024-02-28",
+  "tags": ["Fotografie", "Portrait", "Universität"],
+  "coverImage": "assets/img/fotografie/photo-opas-portraits.png",
+  "images": [
+    "assets/img/fotografie/photo-opas-portraits01.png",
+    "assets/img/fotografie/photo-opas-portraits02.png",
+    "assets/img/fotografie/photo-opas-portraits03.png",
+    "assets/img/fotografie/photo-opas-portraits04.png",
+    "assets/img/fotografie/photo-opas-portraits05.png"
+  ],
+  "shortDescription": "Portraitserie meines Opas – authentische Momente und natürliche Lichtführung.",
+  "longDescription": "Im Rahmen des Moduls Fototechnik entstand diese Portraitserie über meinen Opa. Ziel war es, Nähe, authentische Momente und natürliche Lichtführung zu üben. Die Serie zeigt sowohl ruhige Details als auch aktive Handlungen – ein sehr persönliches Projekt.",
+  "role": "Fotografie, Bildbearbeitung",
+  "tools": "Lightroom , Sony, Photoshop",
+  "category": ["foto", "uni"]
+},
+
+{
+  "id": "design-architekturbuero-redesign",
+  "title": "Redesign eines Architekturbüros",
+  "subtitle": "Design · Corporate Identity  · Universität",
+  "type": "design",
+  "year": 2024,
+  "createdAt": "2024-06-10",
+  "tags": ["Design", "Branding", "Webdesign", "Universität"],
+  "coverImage": "assets/img/design/design-architekturbuero-redesign.png",
+  "images": [
+    "assets/img/design/design-architekturbuero-redesign05.webp",
+    "assets/img/design/design-architekturbuero-redesign06.webp",
+    "assets/img/design/design-architekturbuero-redesign03.png",
+    "assets/img/design/design-architekturbuero-redesign02.png",
+    "assets/img/design/design-architekturbuero-redesign04.png"
+  ],
+  "shortDescription": "Redesign eines Architekturbüros mit Fokus auf moderne, klare und vertrauenswürdige Gestaltung.",
+  "longDescription": "Im Modul Mediengestaltung 2 entstand ein vollständiges Redesign eines Architekturbüros. Ziel war eine moderne, klare und vertrauenswürdige Gestaltung. Der Prozess umfasste Analyse, Moodboards, Stilentwicklung, Logo, Typografie, Farben und Mockups für verschiedene Medien. Dieses Projekt war rein Fiktiv, aber sehr lehrreich.",
+  "role": "Konzept, Design, Layout",
+  "tools": "Adobe Illustrator, InDesign",
+  "category": ["design", "uni"]
+},
+
+{
+  "id": "foto-stillleben",
+  "title": "Stillleben",
+  "subtitle": "Fotografie · Licht & Komposition · Universität",
+  "type": "foto",
+  "year": 2024,
+  "createdAt": "2024-02-28",
+  "tags": ["Fotografie", "Stillleben", "Universität"],
+  "coverImage": "assets/img/fotografie/photo-stillleben-uni.png",
+  "images": [
+    "assets/img/fotografie/photo-stillleben-uni03.png",
+    "assets/img/fotografie/photo-stillleben-uni01.png",
+    "assets/img/fotografie/photo-stillleben-uni02.png"
+  ],
+  "shortDescription": "Stillleben-Serie mit Fokus auf Licht, Schärfentiefe und Komposition.",
+  "longDescription": "In meinem ersten Semester entstanden Stillleben im Rahmen des Moduls Fototechnik mit besonderem Fokus auf Lichtführung, Materialien und formale Komposition. Ziel war es, fotografische Grundlagen sicher anzuwenden und eigene Bildsprache zu entwickeln.",
+  "role": "Fotografie, Lichtsetup, Bildbearbeitung",
+  "tools": "Lightroom, Sony, Photoshop",
+  "category": ["foto", "uni"]
+},
+
+{
+  "id": "3d-griechischer-hof",
+  "title": "3D-Szene",
+  "subtitle": "3D · Modellierung & Licht · Universität", 
+  "type": "3d",
+  "year": 2025,
+  "createdAt": "2025-02-28",
+  "tags": ["3D", "Modelling", "Blender", "Universität"],
+  "coverImage": "assets/img/design/3d-griechischer-hof.png",
+  "images": [
+    "assets/img/design/3d-griechischer-hof.png"
+  ],
+  "shortDescription": "Modellierung eines mediterranen Innenhofs – Fokus auf Licht, Texturen und Atmosphäre.",
+  "longDescription": "In diesem Projekt modellierte ich eine mediterrane 3D-Szene. Lernschwerpunkte des Moduls 3D-Modellierung für Film und Spiele waren Hard-Surface-Modelling, UVs, Materialien, Lichtführung und Rendern.",
+  "role": "Modellierung, Texturing, Lighting",
+  "tools": "Blender",
+  "category": ["3d", "uni"]
+},
+
+{
+  "id": "film-euphoria",
+  "title": "Euphoria-Szene",
+  "subtitle": "Film · Nachstellung  · Universität",
+  "type": "film",
+  "year": 2024,
+  "createdAt": "2024-05-20",
+  "tags": ["Film", "Übung", "Universität"],
+  "coverImage": "assets/img/film/film-euphoria-projekt03.png",
+  "images": ["assets/video/euphoria.mp4"],
+  "shortDescription": "Nachstellung einer Euphoria-Szene im Rahmen einer Projektwoche – Fokus auf Kamera, Licht & Schauspiel.",
+  "longDescription": "Eine dreitägige Übung im Team: Planung, Kameraführung, Setgestaltung und Schnitt zur Nachstellung einer emotionalen Szene aus Euphoria. Ich übernahm überwiegend Color Grading und Tonbearbeitung. Ziel war es, technische und kreative Fähigkeiten zu vertiefen.",
+  "role": "Konzept, Schnitt, Color Grading, Ton",
+  "tools": "DaVinci Resolve",
+  "category": ["film", "uni"]
+},
+
+{
+  "id": "film-unvollkommen-perfekt",
+  "title": "Kurzfilm",
+  "subtitle": "Film · Drama · Eigenproduktion · Universität",
+  "type": "film",
+  "year": 2024,
+  "createdAt": "2024-08-31",
+  "tags": ["Film", "Drama", "Eigenprojekt", "Universität"],
+  "coverImage": "assets/img/film/UnvollkommenPerfekt1.png",
+  "images": [
+    "assets/video/UnvollkommenPerfekt.mp4",
+    "assets/img/film/UnvollkommenPerfekt1.png",
+    "assets/img/film/UnvollkommenPerfekt2.png",
+    "assets/img/film/UnvollkommenPerfekt3.png"
+  ],
+  "shortDescription": "Kurzfilm ‚Unvollkommen Perfekt‘ über eine junge Frau, die nach Rückschlägen neue Hoffnung findet.",
+  "longDescription": "Der Kurzfilm ‚Unvollkommen Perfekt‘ entsand im Rahmen des Mpduls Filmtechnik und erzählt die Reise einer jungen Frau, die nach Rückschlägen mit Selbstzweifeln kämpft und durch eine unerwartete Begegnung im Wald neue Hoffnung findet. Der Film behandelt Perfektionismus, Selbstwertgefühl und den Umgang mit Misserfolgen." ,
+  "role": "Drehbuch, Regie, Kamera, Schnitt",
+  "tools": "DaVinci Resolve, Sony",
+  "category": ["film", "uni"]
+},
+
+{
+  "id": "3d-design-architektur",
+  "title": "Blender Architektur",
+  "subtitle": "3D  · Modellierung & Rendering  · Abitur",
+  "type": "3d",
+  "year": 2022,
+  "createdAt": "2022-06-20",
+  "tags": ["3D", "Modelling", "Blender", "Abitur"],
+  "coverImage": "assets/img/design/3d-design-architektur.png",
+  "images": [
+    "assets/img/design/3d-design-architektur1.jpg",
+    "assets/img/design/3d-design-architektur2.jpg",
+    "assets/img/design/3d-design-architektur3.jpg",
+    "assets/img/design/3d-design-architektur4.jpg",
+    "assets/img/design/3d-design-architektur5.jpg",
+    "assets/img/design/3d-design-architektur6.jpg"
+  ],
+  "shortDescription": "Modellierung und Rendering eines modernen Architekturentwurfs in Blender.",
+  "longDescription": "In diesem Projekt modellierte ich mein erstes Blender Mdoell. Ein modernes Architekturdesign in Blender. Der Fokus lag auf präziser Modellierung und ansprechendem Licht-Setup, um eine überzeugende Visualisierung des Entwurfs zu erstellen.",
+  "role": "Modellierung, Lighting, Rendering",
+  "tools": "Blender",
+  "category": ["3d", "abitur"]
+}
+
+]
