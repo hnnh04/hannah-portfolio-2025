@@ -7,7 +7,7 @@
   "year": 2025,
   "createdAt": "2025-11-20",
   "tags": ["Film", "Imagevideo", "Auftrag", "Schnitt"],
-  "coverImage": "assets/img/film/film-ombu-spot.png",
+  "coverImage": "assets/img/film/film-ombu-spot.webp",
   "videoEmbedUrl": "https://www.youtube.com/embed/Rg4gA8cjtxE",
   "shortDescription": "Imagevideo für den OMBU BIKE WOMAN / MAN, das die Abenteuer und Naturverbundenheit der Tour einfängt.",
   "longDescription": "Für den OMBU BIKE WOMAN / MAN des Multisport LOS durfte ich ein Imagevideo produzieren. Ziel war es, die Abenteuer und Naturverbundenheit der Tour einzufangen. Mit schönen Kamerabewegungen, schnellem Sounddesign und warmem Color Grading entstand ein Video, das den Spaß und Atmosphäre der Tour transportiert.",
@@ -188,3 +188,4 @@
 }
 
 ]
+
