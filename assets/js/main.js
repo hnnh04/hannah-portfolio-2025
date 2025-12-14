@@ -252,89 +252,105 @@ function openProjectModal(projectId) {
         meta.textContent = metaParts.join(' · ');
     }
 
-    // Media (Bilder-Slider oder Video)
+    // Media (YouTube / mp4 / Bilder)
     const mediaContainer = document.getElementById('modal-media');
     if (mediaContainer) {
         mediaContainer.innerHTML = '';
 
-        if (project.images && project.images.length > 0) {
-            const hasVideo = project.images[0].endsWith('.mp4');
+        // 1) YouTube / Embed
+        if (project.videoEmbedUrl) {
+            mediaContainer.innerHTML = `
+                <div class="project-video-embed">
+                    <iframe
+                        src="${project.videoEmbedUrl}"
+                        title="${project.title}"
+                        loading="lazy"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            `;
+        }
 
-            // Fall 1: Video
-            if (hasVideo) {
-                mediaContainer.innerHTML = `
-                    <video controls>
-                        <source src="${project.images[0]}" type="video/mp4">
-                        Dein Browser unterstützt das Video-Tag nicht.
-                    </video>
-                `;
-            } else {
-                // Fall 2: Bilder-Slider (immer 3 pro "Seite")
-                const images = project.images;
-                const imagesPerPage = 3;
-                const totalPages = Math.ceil(images.length / imagesPerPage);
+        // 2) Lokales Video (mp4) – optional
+        else if (project.images && project.images.length > 0 && project.images[0].endsWith('.mp4')) {
+            mediaContainer.innerHTML = `
+                <video controls>
+                    <source src="${project.images[0]}" type="video/mp4">
+                    Dein Browser unterstützt das Video-Tag nicht.
+                </video>
+            `;
+        }
 
-                let currentPage = 0;
+        // 3) Bilder-Slider
+        else if (project.images && project.images.length > 0) {
+            const images = project.images;
+            const imagesPerPage = 3;
+            const totalPages = Math.ceil(images.length / imagesPerPage);
 
-                mediaContainer.innerHTML = `
-                    <div class="project-modal-media-slider">
-                        <div class="project-modal-media-track"></div>
-                        <div class="project-modal-media-nav">
-                            <button type="button" class="slider-prev">Zurück</button>
-                            <span class="slider-counter"></span>
-                            <button type="button" class="slider-next">Weiter</button>
-                        </div>
+            let currentPage = 0;
+
+            mediaContainer.innerHTML = `
+                <div class="project-modal-media-slider">
+                    <div class="project-modal-media-track"></div>
+                    <div class="project-modal-media-nav">
+                        <button type="button" class="slider-prev">Zurück</button>
+                        <span class="slider-counter"></span>
+                        <button type="button" class="slider-next">Weiter</button>
                     </div>
-               `;
+                </div>
+            `;
 
-                const track = mediaContainer.querySelector('.project-modal-media-track');
-                const prevBtn = mediaContainer.querySelector('.slider-prev');
-                const nextBtn = mediaContainer.querySelector('.slider-next');
-                const counter = mediaContainer.querySelector('.slider-counter');
+            const track = mediaContainer.querySelector('.project-modal-media-track');
+            const prevBtn = mediaContainer.querySelector('.slider-prev');
+            const nextBtn = mediaContainer.querySelector('.slider-next');
+            const counter = mediaContainer.querySelector('.slider-counter');
 
-                function renderPage(pageIndex) {
-                    const start = pageIndex * imagesPerPage;
-                    const end = start + imagesPerPage;
-                    const pageImages = images.slice(start, end);
+            function renderPage(pageIndex) {
+                const start = pageIndex * imagesPerPage;
+                const end = start + imagesPerPage;
+                const pageImages = images.slice(start, end);
 
-                    track.innerHTML = '';
+                track.innerHTML = '';
 
-                    pageImages.forEach(src => {
-                        const slide = document.createElement('div');
-                        slide.classList.add('project-slide');
-                        slide.innerHTML = `<img src="${src}" alt="${project.title}">`;
-                        track.appendChild(slide);
-                    });
-
-                    counter.textContent = `${start + 1}–${Math.min(end, images.length)} / ${images.length}`;
-
-                    prevBtn.disabled = pageIndex === 0;
-                    nextBtn.disabled = pageIndex >= totalPages - 1;
-                }
-
-                prevBtn.addEventListener('click', () => {
-                    if (currentPage > 0) {
-                        currentPage--;
-                        renderPage(currentPage);
-                    }
+                pageImages.forEach(src => {
+                    const slide = document.createElement('div');
+                    slide.classList.add('project-slide');
+                    slide.innerHTML = `<img src="${src}" alt="${project.title}">`;
+                    track.appendChild(slide);
                 });
 
-                nextBtn.addEventListener('click', () => {
-                    if (currentPage < totalPages - 1) {
-                        currentPage++;
-                        renderPage(currentPage);
-                    }
-                });
+                counter.textContent = `${start + 1}–${Math.min(end, images.length)} / ${images.length}`;
 
-                // erste Seite anzeigen
-                renderPage(currentPage);
+                prevBtn.disabled = pageIndex === 0;
+                nextBtn.disabled = pageIndex >= totalPages - 1;
             }
+
+            prevBtn.onclick = () => {
+                if (currentPage > 0) {
+                    currentPage--;
+                    renderPage(currentPage);
+                }
+            };
+
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages - 1) {
+                    currentPage++;
+                    renderPage(currentPage);
+                }
+            };
+
+            renderPage(currentPage);
         }
     }
 
+    // Modal anzeigen (das hattest du vorher drin, ist wichtig)
     modal.classList.add('is-visible');
     modal.setAttribute('aria-hidden', 'false');
 }
+
+
 
 function closeProjectModal() {
     const modal = document.getElementById('project-modal');
@@ -353,7 +369,7 @@ function formatType(type) {
         case 'design': return 'Design';
         case 'foto':   return 'Fotografie';
         case 'film':   return 'Film';
-        case 'film':   return '3d';
+        case '3d':   return '3d';
         default:       return type;
     }
 }
