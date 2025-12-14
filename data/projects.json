@@ -26,7 +26,7 @@
   "tags": ["Fotografie", "Reportage", "Privat"],
   "coverImage": "assets/img/fotografie/photo-tante-hochzeit.webp",
   "images": [
-    "hannah-portfolio-2025/assets/img/fotografie/photo-tante-hochzeit01.webp",
+    "assets/img/fotografie/photo-tante-hochzeit01.webp",
     "assets/img/fotografie/photo-tante-hochzeit02.webp",
     "assets/img/fotografie/photo-tante-hochzeit03.webp",
     "assets/img/fotografie/photo-tante-hochzeit04.webp",
@@ -97,11 +97,11 @@
   "year": 2024,
   "createdAt": "2024-02-28",
   "tags": ["Fotografie", "Stillleben", "Universität"],
-  "coverImage": "assets/img/fotografie/photo-stillleben-uni.png",
+  "coverImage": "assets/img/fotografie/photo-stillleben-uni.webp",
   "images": [
-    "assets/img/fotografie/photo-stillleben-uni03.png",
-    "assets/img/fotografie/photo-stillleben-uni01.png",
-    "assets/img/fotografie/photo-stillleben-uni02.png"
+    "assets/img/fotografie/photo-stillleben-uni03.webp",
+    "assets/img/fotografie/photo-stillleben-uni01.webp",
+    "assets/img/fotografie/photo-stillleben-uni02.webp"
   ],
   "shortDescription": "Stillleben-Serie mit Fokus auf Licht, Schärfentiefe und Komposition.",
   "longDescription": "In meinem ersten Semester entstanden Stillleben im Rahmen des Moduls Fototechnik mit besonderem Fokus auf Lichtführung, Materialien und formale Komposition. Ziel war es, fotografische Grundlagen sicher anzuwenden und eigene Bildsprache zu entwickeln.",
@@ -118,9 +118,9 @@
   "year": 2025,
   "createdAt": "2025-02-28",
   "tags": ["3D", "Modelling", "Blender", "Universität"],
-  "coverImage": "assets/img/design/3d-griechischer-hof.png",
+  "coverImage": "assets/img/design/3d-griechischer-hof.webp",
   "images": [
-    "assets/img/design/3d-griechischer-hof.png"
+    "assets/img/design/3d-griechischer-hof.webp"
   ],
   "shortDescription": "Modellierung eines mediterranen Innenhofs – Fokus auf Licht, Texturen und Atmosphäre.",
   "longDescription": "In diesem Projekt modellierte ich eine mediterrane 3D-Szene. Lernschwerpunkte des Moduls 3D-Modellierung für Film und Spiele waren Hard-Surface-Modelling, UVs, Materialien, Lichtführung und Rendern.",
@@ -188,6 +188,7 @@
 }
 
 ]
+
 
 
 
