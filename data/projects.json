@@ -24,7 +24,7 @@
   "year": 2023,
   "createdAt": "2023-06-18",
   "tags": ["Fotografie", "Reportage", "Privat"],
-  "coverImage": "assets/img/fotografie/photo-tante-hochzeit.webp",
+  "coverImage": "assets/img/fotografie/photo-tante-hochzeit.png",
   "images": [
     "assets/img/fotografie/photo-tante-hochzeit01.webp",
     "assets/img/fotografie/photo-tante-hochzeit02.webp",
@@ -188,6 +188,7 @@
 }
 
 ]
+
 
 
 
