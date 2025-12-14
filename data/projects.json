@@ -24,17 +24,17 @@
   "year": 2023,
   "createdAt": "2023-06-18",
   "tags": ["Fotografie", "Reportage", "Privat"],
-  "coverImage": "assets/img/fotografie/photo-tante-hochzeit.png",
+  "coverImage": "assets/img/fotografie/photo-tante-hochzeit.webp",
   "images": [
-    "assets/img/fotografie/photo-tante-hochzeit01.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit02.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit03.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit04.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit05.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit06.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit09.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit10.jpg",
-    "assets/img/fotografie/photo-tante-hochzeit11.jpg"
+    "assets/img/fotografie/photo-tante-hochzeit01.webp",
+    "assets/img/fotografie/photo-tante-hochzeit02.webp",
+    "assets/img/fotografie/photo-tante-hochzeit03.webp",
+    "assets/img/fotografie/photo-tante-hochzeit04.webp",
+    "assets/img/fotografie/photo-tante-hochzeit05.webp",
+    "assets/img/fotografie/photo-tante-hochzeit06.webp",
+    "assets/img/fotografie/photo-tante-hochzeit09.webp",
+    "assets/img/fotografie/photo-tante-hochzeit10.webp",
+    "assets/img/fotografie/photo-tante-hochzeit11.webp"
   ],
   "shortDescription": "Meine erste Hochzeitsfotografie – fotografiert als Gast und Fotografin. Natürliche Emotionen, Details und stille Momente.",
   "longDescription": "Als Gast auf der Hochzeit meiner Tante hatte ich die Gelegenheit, als Fotografin natürliche und authentische Momente einzufangen. Mein Fokus lag auf emotionalen Augenblicken, Details und der Atmosphäre des Tages. Es war eine bereichernde Erfahrung, die mir viel Freude bereitet hat.",
@@ -51,13 +51,13 @@
   "year": 2024,
   "createdAt": "2024-02-28",
   "tags": ["Fotografie", "Portrait", "Universität"],
-  "coverImage": "assets/img/fotografie/photo-opas-portraits.png",
+  "coverImage": "assets/img/fotografie/photo-opas-portraits.webp",
   "images": [
-    "assets/img/fotografie/photo-opas-portraits01.png",
-    "assets/img/fotografie/photo-opas-portraits02.png",
-    "assets/img/fotografie/photo-opas-portraits03.png",
-    "assets/img/fotografie/photo-opas-portraits04.png",
-    "assets/img/fotografie/photo-opas-portraits05.png"
+    "assets/img/fotografie/photo-opas-portraits01.webp",
+    "assets/img/fotografie/photo-opas-portraits02.webp",
+    "assets/img/fotografie/photo-opas-portraits03.webp",
+    "assets/img/fotografie/photo-opas-portraits04.webp",
+    "assets/img/fotografie/photo-opas-portraits05.webp"
   ],
   "shortDescription": "Portraitserie meines Opas – authentische Momente und natürliche Lichtführung.",
   "longDescription": "Im Rahmen des Moduls Fototechnik entstand diese Portraitserie über meinen Opa. Ziel war es, Nähe, authentische Momente und natürliche Lichtführung zu üben. Die Serie zeigt sowohl ruhige Details als auch aktive Handlungen – ein sehr persönliches Projekt.",
@@ -188,4 +188,5 @@
 }
 
 ]
+
 
