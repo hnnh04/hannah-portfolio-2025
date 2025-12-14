@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Informationen -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <meta name="author" content="Hannah Wolf" />
+    <meta name="title" content="Prüfungsleistung Interaktive Oberflächen Sommersemester 2024" />
+    <meta name="description" content="Diese Website wurde erstellt als Prüfungsleistung zur Thematik eigenes Portfolio." />
+
+    <!-- Favicon für die Website -->
+    <link rel="icon" href="assets/img/W.png" type="image/x-icon">
+
+    <!-- Seitentitel -->
+    <title>Portfolio – Hannah Wolf</title> 
+
+    <!-- Verlinkung der CSS-Dateien für das Design -->
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Hauptstylesheet -->
+    <link rel="stylesheet" href="assets/css/reset.css"> <!-- CSS Reset -->
+    
+    
+     <!-- Verlinkung der Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <div class="wrapper"> <!-- Wrapper, der die gesamte Seite umschließt und auf max. 1200px Breite beschränkt -->
+        <header>
+            <nav>
+                <!-- Logo -->
+                <div class="logo"><img src="assets/img/Wolf_Logo-removebg-preview.png" alt="Logo"></div>
+            
+                <!-- Toggle Button für die mobile Navigation -->
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+            
+                <!-- Navigation links -->
+                <div class="list-container">
+                    <ul>
+                        <li><a href="#about">Über mich</a></li>
+                        <li><a href="#projects">Projekte</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="grid-container"> <!-- Grid-Container für das Hauptlayout -->
+
+                <!-- Startbereich -->
+                <div class="item-1" id="home">
+                    <img src="assets/img/bild01.png" alt="Startbild">
+                </div> 
+
+                <div class="item-2">
+                    <h1>Hi, ich bin Hannah</h1>
+                    <h3>Design · Fotografie · Web</h3>
+                    <p>
+                        Ich studiere Medieninformatik und gestalte mit Leidenschaft visuelle Inhalte: von Fotoprojekten und Designs über Webseiten bis hin zu kleinen Filmprojekten.
+                        Derzeit liegen meine Schwerpunkte besonders auf Fotografie und Design, da ich es liebe, Ideen sichtbar zu machen und Geschichten in Bildern oder klaren 
+                        Layouts zu erzählen.
+                        <br>
+                        <br>
+                        Ich probiere gerne Neues aus, unterstütze kreative Projekte und entwickle mich mit jeder Umsetzung weiter.
+                    </p>
+                </div> 
+
+                <!-- Über mich -->
+                <div class="item-3" id="about">
+                    <div class="about-wrapper">
+                        <div class="about-text">
+                            <h1>Wer bin ich?</h1>
+                            <p>
+                                Ich arbeite an Projekten, in deren Mittelpunkt Fotografie und Design stehen, wobei ich mein technisches Wissen aus dem Studium einbringe.
+                                Durch Workshops, erste Aufträge und viele Uni-Projekte habe ich erfahren, wie vielseitig visuelle Gestaltung sein kann.
+                                <br>
+                                <br>
+                                Wenn du mehr über mich, meinen Werdegang und meine Arbeitsweise erfahren möchtest, findest du hier meinen Lebenslauf, meine Stationen und Kompetenzen.
+                            </p>
+
+                            <a href="about.html" class="about-button">mehr zu mir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item-4">
+                    <div class="about-image">
+                        <img 
+                            id="about-illustration" src="assets/img/illustration.png" alt="Hannah Wolf Illustration">
+                    </div>
+                </div>
+
+                <!-- Projekte -->
+                <div class="item-5" id="projects">
+                    <h1>Aktuelle Projekte</h1>
+
+                    <section id="latest-projects">
+                        <!-- hier rendert JS die letzten 3 Projekte rein -->
+                        <div class="project-list project-list--home" id="latest-projects-list"></div>
+                    </section>
+
+                    <a href="projects.html" class="projects-button">alle Projekte ansehen</a>
+                </div>
+            
+                <!-- Kontakt -->
+                <div class="item-6" id="contact">
+                    <div class="contact-inner">
+                        <h1>Lass uns zusammenarbeiten.</h1>
+
+                        <p>
+                            Ich freue mich über spannende Projekte, kreative Aufträge und neue Kontakte.
+                            Egal ob Design, Fotografie, Web oder Film. Ich bin offen für Austausch und neue Ideen.
+                            <br>
+                            <br>
+                            Schreib mir gerne eine Nachricht oder vernetze dich mit mir über LinkedIn.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-line">
+                                <span class="material-symbols-outlined">mail</span>
+                                <a href="mailto:u38979@hs-harz.de">u38979@hs-harz.de</a>
+                            </div>
+                            <div class="contact-line">
+                                <span class="material-symbols-outlined">work</span>
+                                <a href="https://www.linkedin.com/in/hannah-wolf-5b1a1a1a3/" target="_blank" rel="noopener">
+                                    LinkedIn Profil ansehen
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-actions">
+                            <a href="mailto:u38979@hs-harz.de" class="contact-btn">
+                                E-Mail schreiben
+                            </a>
+                            <a href="https://www.linkedin.com/in/hannah-wolf-5b1a1a1a3/" target="_blank" rel="noopener"
+                            class="contact-btn contact-btn--outline">
+                                Mit mir vernetzen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal für Projektdetails -->
+            <div class="project-modal" id="project-modal" aria-hidden="true">
+                <div class="project-modal-backdrop" data-close-modal></div>
+                <div class="project-modal-dialog" role="dialog" aria-modal="true">
+                    <button class="project-modal-close" type="button" data-close-modal>
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+
+                    <div class="project-modal-header">
+                        <span class="project-pill" id="modal-pill"></span>
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-subtitle"></p>
+                    </div>
+
+                    <div class="project-modal-body">
+                        <div class="project-modal-media" id="modal-media"></div>
+                        <div class="project-modal-text">
+                            <p id="modal-description"></p>
+                            <div class="project-tags" id="modal-tags"></div>
+                            <p class="project-modal-meta" id="modal-meta"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button zum Scrollen nach oben -->
+            <button id="scrollToTop" title="Zum Anfang scrollen"><span class="material-symbols-outlined">keyboard_arrow_up</span></button>
+
+
+        </main>
+
+        <!-- Footer mit Impressum-Link -->
+        <footer>
+            <p>© 2025 Hannah Wolf.</p>
+            <p><a href="impressum.html">Impressum</a></p>
+            <p>Dieses Portfolio wurde im Rahmen einer Studienleistung erstellt und ist nicht öffentlich gelistet.</p>
+        </footer>
+        
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>

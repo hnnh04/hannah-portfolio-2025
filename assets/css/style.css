@@ -1,0 +1,800 @@
+/* #region: -------- GLOBAL -------- */
+/* Globale Stile für die gesamte Seite */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; /* Höhe des HTML-Elements auf 100% setzen */
+}
+
+body {
+    background-color: #F5F5F5; 
+    color: #3A3238;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px; 
+}
+
+.wrapper {
+    max-width: 1200px; /* Maximale Breite */
+    padding: 20px; 
+    margin: 20px auto; /* Zentrierung */
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* #endregion */
+
+/* #region: -------- NAVIGATION -------- */
+/* Stile für die Navigation und das Toggle-Menü */
+nav {
+    min-height: 80px; /* Minimale Höhe für die Navigation */
+    display: flex; /* Flexbox für das Layout der Navigation */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5; 
+    position: relative; /* Ermöglicht die Positionierung des Toggle-Buttons */
+}
+
+.logo img {
+    height: 80px;
+    width: auto; 
+}
+
+nav ul {
+    display: flex; /* Flexbox für die Navigationslinks */
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px 30px; /* Innenabstand für Navigationspunkte */
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid #ebbdb6; /* Sichtbare Border-Farbe beim Hover-Effekt */
+}
+
+nav ul li a {
+    color: #3A3238;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.toggle-button {
+    position: absolute; /* Positionierung relativ zur Navigation */
+    top: 25px;
+    right: 25px;
+    display: none; /* Standardmäßig nicht angezeigt */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #3A3238;
+    border-radius: 100px;
+}
+
+/* #endregion */
+
+/* #region: -------- GRID -------- */
+/* Stile für die Galerie im 2 Spalten Grid-Layout */
+.grid-container {
+    display: grid; /* Grid-Layout */
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten */
+    grid-auto-rows: minmax(500px, auto); 
+    grid-auto-flow: row; 
+    gap: 25px; 
+    grid-template-areas: 
+    "start1 start2"
+    "about1 about2"
+    "projects projects"
+    "contact contact";
+}
+
+/* Flexbox-Layout für Container innerhalb des Grids */
+.grid-container > div {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; /* Flex-Richtung */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* #endregion */
+
+/* #region: -------- 1 -------- */
+/* Stile für das Element in der Grid-Area start1 */
+.item-1 {
+    grid-area: start1; /* Grid-Area-Zuordnung */
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; /* Flex-Richtung */
+    align-items: left; 
+}
+
+.item-1 img {
+    width: 600px; /* Breite des Bildes */
+    height: 400px; /* Höhe des Bildes */
+    object-fit: cover; /* Bildabdeckung */
+}
+
+/* #endregion */
+
+/* #region: -------- 2 -------- */
+/* Stile für das Element in der Grid-Area start2 */
+.item-2 {
+    grid-area: start2; /* Grid-Area-Zuordnung */
+    display: flex;
+    justify-content: center; 
+    flex-direction: column; /* Flex-Richtung */
+    align-items: left; 
+    margin-left: 20px; 
+}
+
+.item-2 h1 {
+    font-size: 60px; /* Schriftgröße für h1 */
+}
+
+.item-2 h3 {
+    font-size: 25px; /* Schriftgröße für h3 */
+    color: #9d3b2c; /* Farbe für h3 */
+}
+
+.item-2 p {
+    margin-top: 20px; /* Oberer Abstand für Absätze */
+}
+
+/* #endregion */
+
+/* #region: -------- 3 -------- */
+/* Stile für das Element in der Grid-Area about */
+.item-3 {
+    grid-area: about1;            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item-3 h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.item-3 p {
+    margin-top: 20px;
+    max-width: 650px;             
+}
+
+.about-button {
+    width: 200px;
+    padding: 10px 10px; 
+    background-color: #9d3b2c; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    display: inline-block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+}
+
+.about-button:hover {
+    background-color: #ebbdb6; /* Hintergrundfarbe beim Hover */
+}
+
+/* #endregion */
+
+/* #region: -------- 4 -------- */
+
+/* Bild + Tags als zweites Grid-Element */
+.item-4 {
+    grid-area: about2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Kreisbild */
+.about-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 999px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region: -------- 5 -------- */
+.item-5 {
+    grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.item-5 h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.project-list,
+.project-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.project-list.project-list--home {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+}
+
+.project-list:not(.project-list--home) {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+    height: 320px;
+    background: #fdf9f6;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.project-card--compact {
+    margin: 0;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-card-content {
+    padding: 1rem 1.2rem 1.2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-card-content h3 {
+    margin: 0.3rem 0 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.project-card-content p {
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-pill {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: #f0d3c9;
+    color: #5b2a21;
+    font-weight: 500;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    border: 1px solid #d6b0a4;
+}
+
+.project-link {
+    margin-top: auto;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #9d3b2c;
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Button unter den Projekten */
+.projects-button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #9d3b2c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.projects-button:hover {
+    background-color: #ebbdb6;
+}
+
+/* #endregion */
+
+/* #region: -------- 6 -------- */
+
+/* Kontakt-Grid-Item */
+.item-6 {
+    grid-area: contact;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Card im Kontaktbereich */
+.contact-inner {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-inner h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-inner p {
+    line-height: 1.5;
+}
+
+/* Zeilen für Mail + LinkedIn */
+.contact-details {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+}
+
+.contact-line .material-symbols-outlined {
+    font-size: 20px;
+    color: #9d3b2c;
+}
+
+.contact-line a {
+    color: #3A3238;
+    text-decoration: none;
+}
+
+.contact-line a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons unten */
+.contact-actions {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.contact-btn {
+    padding: 10px 18px;
+    background-color: #9d3b2c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.contact-btn:hover {
+    background-color: #ebbdb6;
+    color: #3A3238;
+}
+
+.contact-btn--outline {
+    background: transparent;
+    border: 2px solid #9d3b2c;
+    color: #9d3b2c;
+}
+
+.contact-btn--outline:hover {
+    background: #9d3b2c;
+    color: #fff;
+}
+
+/* Mobile: Card schön einspaltig */
+@media (max-width: 750px) {
+    .contact-inner {
+        padding: 20px 18px;
+    }
+
+    .contact-inner h1 {
+        font-size: 30px;
+    }
+
+    .contact-inner p {
+        font-size: 16px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* #endregion */
+
+/* #region: ---------- MODAL ---------- */
+
+.project-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.project-modal.is-visible {
+    display: flex;
+}
+
+.project-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.project-modal-dialog {
+    position: relative;
+    background: #fdf9f6;
+    border-radius: 18px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    padding: 22px 24px 24px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1001;
+}
+
+.project-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 999px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.project-modal-close .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.project-modal-header h2 {
+    font-size: 26px;
+    margin: 4px 0;
+}
+
+.project-modal-header p {
+    font-size: 0.95rem;
+    color: #5b2a21;
+}
+
+.project-modal-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: 18px;
+}
+
+.project-modal-media img,
+.project-modal-media video {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.project-modal-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-modal-meta {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #6b5a5a;
+}
+
+/* #endregion */
+
+/* #region:  -------- FOOTER -------- */
+/* Stile für den Footer und den Scroll-to-Top-Button. Beinhaltet Layout und Interaktivität des Fußbereichs. */
+#scrollToTop {
+    position: fixed; /* Fest positionierter Button für den schnellen Zugang zum oberen Rand */
+    bottom: 20px; 
+    right: 20px;
+    display: none; /* Standardmäßig ausgeblendet */
+    background-color: #9d3b2c; 
+    color: #F5F5F5; 
+    border: none; /* Keine Rahmenlinie für den Button */
+    padding: 10px; 
+    cursor: pointer; /* Mauszeiger wird zum Zeiger beim Hover */
+    border-radius: 5px; 
+}
+
+#scrollToTop:hover {
+    background-color: #ebbdb6; 
+}
+
+footer {
+    margin: 60px 0 20px 0; 
+    
+}
+
+footer p {
+    display: flex; /* Flexbox für die Fußzeile */
+    justify-content: center; 
+    align-items: center;
+    list-style: none; /* Entfernt Aufzählungszeichen von Listen */
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none; /* Entfernt Unterstreichung von Links im Footer */
+    color: #3A3238; 
+}
+
+.impressum div {
+    margin: 10px 0px 10px 80px; 
+}
+
+.impressum h1 {
+    font-size: 25px; /* Schriftgröße für h1 */
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.impressum p {
+    margin-bottom: 10px; 
+}
+
+/* #endregion */
+
+/* #region:  -------- MEDIA -------- */
+/* Medienabfragen für die Anpassung des Layouts auf verschiedenen Bildschirmgrößen. (KI-Ünterstützung) */
+
+/* Tablet-Ansicht */
+@media (max-width: 1024px) {
+    .wrapper {
+        max-width: 90%; /* Maximale Breite anpassen */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(250px, auto);
+        grid-template-areas:
+            "start1"
+            "start2"
+            "about1"
+            "about2"
+            "projects"
+            "contact";
+    }
+
+    nav ul {
+        margin-right: 20px; /* Abstand nach rechts */
+    }
+
+    .toggle-button {
+        display: flex; /* Anzeigen des Toggle-Buttons */
+        position: absolute; /* Positionierung */
+        top: 25px; 
+        right: 20px; 
+    }
+
+    .list-container {
+        display: none; /* Ausblenden der Liste */
+        width: 100%;
+    }
+
+    .list-container.active {
+        display: flex; /* Anzeigen der Liste */
+    }
+
+    .list-container ul {
+        flex-direction: column; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .list-container li {
+        text-align: center; 
+        padding: 15px; 
+        border-bottom: 1px solid #ebbdb6; 
+        width: 100%; 
+    }
+
+    .list-container li:hover {
+        border-bottom: 4px solid #ebbdb6; /* Border beim Hover */
+    }
+
+    .list-container li a {
+        font-size: 22px; /* Schriftgröße für Links */
+    }
+
+    .item-1 img {
+        width: 100%; /* Breite des Bildes */
+        height: auto;
+        align-items: center;
+    }
+
+    .grid-container div.services {
+        flex-direction: column; /* Spaltenanordnung */
+        align-items: center; /* Zentrierung */
+    }
+
+    .grid-container div.project-flex {
+        flex-direction: column; /* Spaltenanordnung */
+    }
+
+    .flex-contact {
+        flex-direction: column; /* Stapelelemente untereinander bei mittleren Bildschirmen */
+        gap: 40px; /* Größerer Abstand zwischen den Elementen */
+    }
+
+    #map {
+        height: 250px; /* Höhe anpassen für kleinere Bildschirme */
+    }
+}
+
+/* Mobile Ansicht */
+@media (max-width: 750px) {
+    .wrapper {
+        max-width: 100%; /* Maximale Breite anpassen */
+        padding: 0 10px; /* Innenabstand anpassen */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, auto);
+        grid-template-areas:
+            "start1"
+            "start2"
+            "about1"
+            "about2"
+            "projects"
+            "contact";
+    }
+
+    .list-container {
+        display: none; /* Ausblenden der Liste */
+        width: 100%; /* Breite der Liste */
+    }
+
+    .toggle-button {
+        display: flex; /* Anzeigen des Toggle-Buttons */
+        position: absolute;
+        top: 25px; 
+        right: 20px; 
+    }
+
+    nav {
+        flex-direction: column; /* Spaltenanordnung */
+        align-items: flex-start; 
+        position: relative; 
+    }
+
+    .list-container ul {
+        flex-direction: column; /* Spaltenanordnung */
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    .list-container li {
+        text-align: center; /* Zentrierter Text */
+        padding: 15px;
+        border-bottom: 1px solid #ebbdb6; 
+    }
+
+    .list-container.active {
+        display: flex; /* Anzeigen der Liste */
+    }
+
+    .item-1 img {
+        width: 100%; /* Breite des Bildes */
+        height: auto; /* Automatische Höhe */
+    }
+
+    .service-item {
+        max-width: 100%; /* Maximale Breite anpassen */
+    }
+
+    .icon {
+        font-size: 40px; /* Schriftgröße der Icons */
+    }
+
+    .project-item {
+        max-width: 100%; /* Maximale Breite anpassen */
+    }
+
+    .flex-contact {
+        flex-direction: column; /* Stapelelemente untereinander bei kleinen Bildschirmen */
+        gap: 30px; /* Größerer Abstand zwischen den Elementen */
+    }
+
+    .item-5 {
+        font-size: 18px; /* Schriftgröße reduzieren für kleinere Bildschirme */
+    }
+
+    .item-5 h1 {
+        font-size: 30px; /* Schriftgröße reduzieren */
+    }
+
+    .item-5 h4 {
+        font-size: 18px; /* Schriftgröße reduzieren */
+    }
+
+    #map {
+        height: 200px; /* Höhe weiter reduzieren für kleine Bildschirme */
+    }
+}
+
+/* #endregion */

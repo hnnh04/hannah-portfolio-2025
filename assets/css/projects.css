@@ -1,0 +1,492 @@
+/* #region: -------- GLOBAL -------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #3A3238;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 20px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #endregion */
+
+/* #region: -------- NAVIGATION -------- */
+
+nav {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px 30px;
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid #ebbdb6;
+}
+
+nav ul li a {
+    color: #3A3238;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #3A3238;
+    border-radius: 100px;
+}
+
+/* #endregion */
+
+/* #region: -------- HERO / INTRO -------- */
+
+main {
+    width: 100%;
+}
+
+.projects-hero {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.projects-hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.projects-hero p {
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+/* #endregion */
+
+/* #region: -------- FILTER + GRID -------- */
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.filter-button {
+    border: 1px solid #d6b0a4;
+    background: transparent;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.filter-button.is-active {
+    background: #9d3b2c;
+    color: #fff;
+    border-color: #9d3b2c;
+}
+
+/* 3 Spalten wie auf der Startseite */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region: -------- PROJECT CARD -------- */
+
+.project-card {
+    height: 400px;
+    background: #fdf9f6;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 200px;           /* <- Höhe der Bilder in der Karte */
+    object-fit: cover;
+    display: block;
+}
+
+.project-card-content {
+    padding: 1rem 1.2rem 1.2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-card-content h3 {
+    margin: 0.3rem 0 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.project-card-content p {
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.project-pill {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: #f0d3c9;
+    color: #5b2a21;
+    font-weight: 500;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    border: 1px solid #d6b0a4;
+}
+
+.project-link {
+    margin-top: auto;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #9d3b2c;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* #endregion */
+
+/* #region: -------- MODAL + SLIDER -------- */
+
+.project-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.project-modal.is-visible {
+    display: flex;
+}
+
+.project-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.project-modal-dialog {
+    position: relative;
+    background: #fdf9f6;
+    border-radius: 18px;
+    max-width: 900px;
+    width: 90%;
+    max-height: 90vh;
+    padding: 22px 24px 24px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 1001;
+}
+
+.project-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 999px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.project-modal-close .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.project-modal-header h2 {
+    font-size: 26px;
+    margin: 4px 0;
+}
+
+.project-modal-header p {
+    font-size: 0.95rem;
+    color: #5b2a21;
+}
+
+.project-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.project-modal-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.project-modal-meta {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #6b5a5a;
+}
+
+/* Basis: nichts läuft aus dem Container */
+.project-modal-media {
+    overflow: hidden;
+}
+
+/* Hülle für Slider + Navigation */
+.project-modal-media-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Reihe mit den Slides */
+.project-modal-media-track {
+    display: flex;
+    gap: 12px;
+    transition: transform 0.25s ease;
+}
+
+/* einzelne Kachel */
+.project-slide {
+    flex: 0 0 calc(33.333% - 8px); /* genau 3 pro „Seite“ */
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Bild in der Kachel */
+.project-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Video im Modal (wenn nur 1 Video) */
+.project-modal-media video {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Navi unter dem Slider */
+.project-modal-media-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.8rem;
+    color: #6b5a5a;
+}
+
+.project-modal-media-nav button {
+    border: none;
+    border-radius: 999px;
+    padding: 0.25rem 0.8rem;
+    background: #f0d3c9;
+    color: #5b2a21;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-modal-media-nav button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+
+.slider-counter {
+    font-variant-numeric: tabular-nums;
+}
+
+/* #endregion */
+
+/* #region: -------- FOOTER -------- */
+
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #9d3b2c;
+    color: #F5F5F5;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#scrollToTop:hover {
+    background-color: #ebbdb6;
+}
+
+footer {
+    margin: 60px 0 20px 0;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3A3238;
+}
+
+/* #endregion */
+
+/* #region: -------- MEDIA QUERIES -------- */
+
+@media (max-width: 1024px) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    .list-container {
+        display: none;
+        width: 100%;
+    }
+
+    .list-container.active {
+        display: flex;
+    }
+
+    .list-container ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .list-container li {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #ebbdb6;
+    }
+
+    .projects-hero h1 {
+        font-size: 32px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-slide {
+        flex: 0 0 100%;
+        height: 260px;
+    }
+}
+
+/* #endregion */

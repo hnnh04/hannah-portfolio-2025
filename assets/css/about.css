@@ -1,0 +1,517 @@
+/* #region: -------- GLOBAL -------- */
+/* Globale Stile für die gesamte Seite */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; /* Höhe des HTML-Elements auf 100% setzen */
+}
+
+body {
+    background-color: #F5F5F5; 
+    color: #3A3238;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 20px; 
+}
+
+.wrapper {
+    max-width: 1200px; /* Maximale Breite */
+    padding: 20px; 
+    margin: 20px auto; /* Zentrierung */
+    flex-direction: column; 
+    align-items: center; 
+}
+
+/* #endregion */
+
+/* #region: -------- NAVIGATION -------- */
+
+nav {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5; 
+    position: relative;
+}
+
+.logo img {
+    height: 80px;
+    width: auto; 
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 15px 30px;
+    border-bottom: 4px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+nav ul li:hover {
+    border-bottom: 4px solid #ebbdb6;
+}
+
+nav ul li a {
+    color: #3A3238;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #3A3238;
+    border-radius: 100px;
+}
+
+/* #endregion */
+
+/* #region: -------- LAYOUT & SECTIONS -------- */
+
+main {
+    width: 100%;
+}
+
+.about-section {
+    margin-top: 70px;
+}
+
+/* Section-Header */
+
+.section-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 18px;
+    max-width: 650px;
+    line-height: 1.5;
+}
+
+/* #endregion */
+
+/* #region: -------- HERO -------- */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+    align-items: flex-start;
+}
+
+.about-hero-text h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.about-hero-text h3 {
+    font-size: 20px;
+    color: #9d3b2c;
+    margin-bottom: 20px;
+}
+
+.about-hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.about-tags {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.about-tag {
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid #d6b0a4;
+    font-size: 0.85rem;
+    background: #fdf9f6;
+}
+
+.about-hero-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.about-hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    object-fit: cover;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.about-profile-card {
+    width: 100%;
+    max-width: 320px;
+    background: #fdf9f6;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 18px 20px;
+}
+
+.about-profile-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.about-profile-card ul {
+    list-style: none;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-profile-card li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.profile-icon {
+    font-size: 20px;
+    color: #9d3b2c;
+}
+
+.profile-label {
+    font-weight: 600;
+}
+
+.about-hero-bio {
+    margin-top: 50px;
+}
+
+.about-hero-bio h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.about-hero-bio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.about-hero-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.about-hero-image img {
+    width: 280px;
+    height: 280px;
+    border-radius: 999px;
+    object-fit: cover;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.profile-icon {
+    font-size: 20px;
+    color: #9d3b2c;
+}
+
+.profile-label {
+    font-weight: 600;
+}
+
+/* #endregion */
+
+/* #region: -------- TIMELINE -------- */
+
+.about-timeline {
+    margin-top: 80px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border-left: 2px solid #9d3b2c;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 10px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -27px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    background: #9d3b2c;
+}
+
+.timeline-year {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #9d3b2c;
+    margin-bottom: 4px;
+}
+
+.timeline-content h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.timeline-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* #endregion */
+
+/* #region: -------- SKILLS -------- */
+
+/* Skills-Kacheln neu strukturiert */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #fdf9f6;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #3A3238;
+}
+
+.skill-card ul {
+    list-style: none;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.skill-card ul li {
+    margin-bottom: 6px;
+}
+
+.skill-card strong {
+    color: #9d3b2c;
+}
+
+
+/* #endregion */
+
+/* #region: -------- GOALS -------- */
+
+.about-goals {
+    margin-top: 80px;
+}
+
+.about-cta {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.about-btn {
+    padding: 10px 18px;
+    background-color: #9d3b2c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.about-btn:hover {
+    background-color: #ebbdb6;
+    color: #3A3238;
+}
+
+.about-btn--outline {
+    background: transparent;
+    border: 2px solid #9d3b2c;
+    color: #9d3b2c;
+}
+
+.about-btn--outline:hover {
+    background: #9d3b2c;
+    color: #fff;
+}
+
+/* #endregion */
+
+/* #region:  -------- FOOTER -------- */
+/* Stile für den Footer und den Scroll-to-Top-Button. Beinhaltet Layout und Interaktivität des Fußbereichs. */
+#scrollToTop {
+    position: fixed; /* Fest positionierter Button für den schnellen Zugang zum oberen Rand */
+    bottom: 20px; 
+    right: 20px;
+    display: none; /* Standardmäßig ausgeblendet */
+    background-color: #9d3b2c; 
+    color: #F5F5F5; 
+    border: none; /* Keine Rahmenlinie für den Button */
+    padding: 10px; 
+    cursor: pointer; /* Mauszeiger wird zum Zeiger beim Hover */
+    border-radius: 5px; 
+}
+
+#scrollToTop:hover {
+    background-color: #ebbdb6; 
+}
+
+footer {
+    background-color: #9d3b2c; 
+    margin: 60px 0 20px 0; 
+}
+
+footer p {
+    display: flex; /* Flexbox für die Fußzeile */
+    justify-content: center; 
+    align-items: center;
+    list-style: none; /* Entfernt Aufzählungszeichen von Listen */
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none; /* Entfernt Unterstreichung von Links im Footer */
+    color: #3A3238; 
+}
+
+.impressum div {
+    margin: 10px 0px 10px 80px; 
+}
+
+.impressum h1 {
+    font-size: 25px; /* Schriftgröße für h1 */
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.impressum p {
+    margin-bottom: 10px; 
+}
+
+
+/* #endregion */
+
+/* #region: -------- MEDIA QUERIES -------- */
+
+@media (max-width: 1024px) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-image {
+        order: -1;
+    }
+
+    .about-bio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    .list-container {
+        display: none;
+        width: 100%;
+    }
+
+    .list-container.active {
+        display: flex;
+    }
+
+    .list-container ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .list-container li {
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid #ebbdb6;
+    }
+
+    .about-hero-text h1 {
+        font-size: 32px;
+    }
+
+    .section-header h2 {
+        font-size: 26px;
+    }
+}
+
+/* #endregion */

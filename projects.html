@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Hannah Wolf - M51652">
+    <meta name="title" content="Prüfungsleistung Interaktive Oberflächen Sommersemester 2024">
+    <meta name="description" content="Projekte von Hannah Wolf – Medieninformatik-Studentin mit Fokus auf Design, Fotografie und Film.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/W.png" type="image/x-icon">
+
+    <title>Projekte – Hannah Wolf</title>
+
+    <!-- CSS: erst Reset, dann Projektdesign -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="assets/img/Wolf_Logo-removebg-preview.png" alt="Logo">
+                </div>
+
+                <!-- Toggle Button für mobile Navigation -->
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+
+                <!-- Navigation Links -->
+                <div class="list-container">
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="about.html">Über mich</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Intro -->
+            <section class="projects-hero">
+                <h1>Projekte</h1>
+                <p>
+                    Eine Auswahl meiner Arbeiten aus Design, Fotografie, Film und 3d Design. Viel Spaß beim Stöbern!
+                </p>
+            </section>
+
+            <!-- Filter + Grid -->
+            <section id="projects">
+                <div class="project-filters">
+                    <button class="filter-button is-active" data-filter="all">Alle</button>
+                    <button class="filter-button" data-filter="design">Design</button>
+                    <button class="filter-button" data-filter="foto">Fotografie</button>
+                    <button class="filter-button" data-filter="film">Film</button>
+                    <button class="filter-button" data-filter="3d">3d</button>
+                </div>
+
+                <div class="project-grid" id="project-grid">
+                    <!-- Karten werden per JS aus data/projects.json gerendert -->
+                </div>
+            </section>
+
+            <!-- Modal für Projektdetails -->
+            <div class="project-modal" id="project-modal" aria-hidden="true">
+                <div class="project-modal-backdrop" data-close-modal></div>
+                <div class="project-modal-dialog" role="dialog" aria-modal="true">
+                    <button class="project-modal-close" type="button" data-close-modal>
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+
+                    <div class="project-modal-header">
+                        <span class="project-pill" id="modal-pill"></span>
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-subtitle"></p>
+                    </div>
+
+                    <div class="project-modal-body">
+                        <div class="project-modal-media" id="modal-media"></div>
+                        <div class="project-modal-text">
+                            <p id="modal-description"></p>
+                            <div class="project-tags" id="modal-tags"></div>
+                            <p class="project-modal-meta" id="modal-meta"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="scrollToTop" title="Zum Anfang scrollen">
+                <span class="material-symbols-outlined">keyboard_arrow_up</span>
+            </button>
+        </main>
+
+        <!-- Footer mit Impressum-Link -->
+        <footer>
+            <p>© 2025 Hannah Wolf.</p>
+            <p><a href="impressum.html">Impressum</a></p>
+            <p>Dieses Portfolio wurde im Rahmen einer Studienleistung erstellt und ist nicht öffentlich gelistet.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript (Nav + Scroll + Projekte + Modal) -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
